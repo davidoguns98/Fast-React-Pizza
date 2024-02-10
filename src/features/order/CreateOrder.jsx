@@ -52,7 +52,13 @@ function CreateOrder() {
       <Form method="POST">
         <div className="mb-5 flex flex-col gap-2 sm:flex sm:flex-row sm:items-center ">
           <label className="sm:basis-40">First Name</label>
-          <input className="input" type="text" name="customer" required />
+          <input
+            className="input"
+            defaultValue={username}
+            type="text"
+            name="customer"
+            required
+          />
         </div>
 
         <div className="mb-5 flex flex-col gap-2 sm:flex sm:flex-row sm:items-center ">
